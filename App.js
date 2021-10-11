@@ -1,58 +1,51 @@
-import React, { useState } from "react";
-import { Header } from "react-native-elements";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { ListItem, Avatar, Icon } from "react-native-elements";
-import { View } from "react-native";
+import React from "react";
+import { View, Text, Image } from "react-native";
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItemList,
+} from "@react-navigation/drawer";
+import { NavigationContainer } from "@react-navigation/native";
+import { Button } from "react-native-elements";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import Home from "./sections/HomeSection/HomePage";
 
-const list = [
-  {
-    name: "Главная",
-  },
-  {
-    name: "Предложения",
-  },
-  {
-    name: "Автомобили в наличии",
-  },
-  {
-    name: "Контакты",
-  },
-];
+function Offers() {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Offers</Text>
+    </View>
+  );
+}
+
+const Drawer = createDrawerNavigator();
+const CustomDrawer = (props) => {
+  return (
+    <DrawerContentScrollView {...props}>
+      <DrawerItemList {...props} />
+    </DrawerContentScrollView>
+  );
+};
+
+const DrawerNavigator = () => {
+  return (
+    <Drawer.Navigator
+      screenOptions={{
+        headerShown: true,
+        //headerStyle: { backgroundColor: "black" },
+      }}
+      drawerContent={(props) => <CustomDrawer {...props} />}
+    >
+      <Drawer.Screen component={Home} name="Home" />
+      <Drawer.Screen component={Offers} name="Offers" />
+    </Drawer.Navigator>
+  );
+};
 
 export default function App() {
-  const [expanded, setExpanded] = useState(true);
   return (
-    <SafeAreaProvider>
-      <Header
-        leftComponent={{
-          icon: "menu",
-          color: "#fff",
-          iconStyle: { color: "#fff" },
-        }}
-      ></Header>
-
-      <ListItem.Accordion
-        content={
-          <>
-            <ListItem.Content>
-              <ListItem.Title>МЕНЮ</ListItem.Title>
-            </ListItem.Content>
-          </>
-        }
-        isExpanded={expanded}
-        onPress={() => {
-          setExpanded(!expanded);
-        }}
-      >
-        {list.map((l, i) => (
-          <ListItem key={i} onPress={log} bottomDivider>
-            <ListItem.Content>
-              <ListItem.Title>{l.name}</ListItem.Title>
-            </ListItem.Content>
-            <ListItem.Chevron />
-          </ListItem>
-        ))}
-      </ListItem.Accordion>
-    </SafeAreaProvider>
+    <NavigationContainer>
+      <DrawerNavigator />
+    </NavigationContainer>
   );
 }
