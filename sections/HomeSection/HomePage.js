@@ -43,8 +43,8 @@ export default function Home({ navigation }) {
             style={styles.finalimage}
           />
         </View>
-        <Footer />
       </ScrollView>
+      <Footer />
     </SafeAreaProvider>
   );
 }

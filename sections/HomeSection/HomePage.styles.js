@@ -2,14 +2,14 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   text: {
-    alignContent: "flex-start",
+    textAlign: "left",
     fontSize: "14px",
     fontFamily: "Segoe UI",
     paddingLeft: "10px",
     paddingBottom: "5px",
   },
   textFinal: {
-    alignContent: "flex-start",
+    textAlign: "left",
     fontSize: "14px",
     fontFamily: "Segoe UI",
     marginBottom: "20px",
@@ -19,16 +19,16 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   centerimage: {
-    width: "320px",
+    width: "100%",
     height: "145px",
     marginBottom: "6px",
   },
   finalimage: {
-    width: "320px",
+    width: "100%",
     height: "145px",
   },
   topimage: {
-    width: "320px",
+    width: "100%",
     height: "165px",
   },
   header: {

@@ -11,6 +11,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import Home from "../sections/HomeSection/HomePage";
 import Offers from "../OfferSection/Offers";
+import Contacts from "../ContactsSection/Contacts";
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = (props) => {
@@ -32,6 +33,7 @@ const DrawerNavigator = () => {
     >
       <Drawer.Screen component={Home} name="Home" />
       <Drawer.Screen component={Offers} name="Offers" />
+      <Drawer.Screen component={Contacts} name="Contacts" />
     </Drawer.Navigator>
   );
 };
