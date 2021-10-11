@@ -1,21 +1,58 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { Header } from "react-native-elements";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { ListItem, Avatar, Icon } from "react-native-elements";
+import { View } from "react-native";
+
+const list = [
+  {
+    name: "Главная",
+  },
+  {
+    name: "Предложения",
+  },
+  {
+    name: "Автомобили в наличии",
+  },
+  {
+    name: "Контакты",
+  },
+];
 
 export default function App() {
+  const [expanded, setExpanded] = useState(true);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <Header
+        leftComponent={{
+          icon: "menu",
+          color: "#fff",
+          iconStyle: { color: "#fff" },
+        }}
+      ></Header>
+
+      <ListItem.Accordion
+        content={
+          <>
+            <ListItem.Content>
+              <ListItem.Title>МЕНЮ</ListItem.Title>
+            </ListItem.Content>
+          </>
+        }
+        isExpanded={expanded}
+        onPress={() => {
+          setExpanded(!expanded);
+        }}
+      >
+        {list.map((l, i) => (
+          <ListItem key={i} onPress={log} bottomDivider>
+            <ListItem.Content>
+              <ListItem.Title>{l.name}</ListItem.Title>
+            </ListItem.Content>
+            <ListItem.Chevron />
+          </ListItem>
+        ))}
+      </ListItem.Accordion>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
