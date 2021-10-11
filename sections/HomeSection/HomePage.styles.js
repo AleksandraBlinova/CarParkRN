@@ -34,10 +34,14 @@ export const styles = StyleSheet.create({
   header: {
     alignContent: "center",
     justifyContent: "center",
-    fontSize: "28px",
+    fontSize: "20px",
     fontFamily: "Segoe UI",
     marginBottom: "20px",
     marginTop: "20px",
+    fontWeight: "600",
+  },
+  scroll: {
+    backgroundColor: "#fff",
   },
   view: {
     flex: 1,

@@ -31,9 +31,9 @@ const DrawerNavigator = () => {
       }}
       drawerContent={(props) => <CustomDrawer {...props} />}
     >
-      <Drawer.Screen component={Home} name="Home" />
-      <Drawer.Screen component={Offers} name="Offers" />
-      <Drawer.Screen component={Contacts} name="Contacts" />
+      <Drawer.Screen component={Home} name="Главная" />
+      <Drawer.Screen component={Offers} name="Предложения" />
+      <Drawer.Screen component={Contacts} name="Контакты" />
     </Drawer.Navigator>
   );
 };

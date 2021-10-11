@@ -28,8 +28,11 @@ export const styles = StyleSheet.create({
     fontFamily: "Segoe UI",
     marginLeft: "20px",
     marginRight: "20px",
-    marginTop: "100px",
+    marginTop: "80px",
     textAlign: "center",
     fontWeight: "bold",
+  },
+  scroll: {
+    backgroundColor: "#fff",
   },
 });

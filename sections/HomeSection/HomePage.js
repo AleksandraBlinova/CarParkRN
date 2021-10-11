@@ -14,7 +14,7 @@ import Footer from "../../Footer/Footer";
 export default function Home({ navigation }) {
   return (
     <SafeAreaProvider>
-      <ScrollView>
+      <ScrollView style={styles.scroll}>
         <View style={styles.view}>
           <Image
             source={require("../../images/image_interior_1800x900.jpg")}

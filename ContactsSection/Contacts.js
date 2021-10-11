@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 export default function Contacts() {
   return (
     <SafeAreaProvider>
-      <ScrollView>
+      <ScrollView style={styles.scroll}>
         <View style={styles.view}>
           <Text style={styles.header}>
             МЫ ВСЕГДА РАДЫ ВАМ ПОМОЧЬ И ОТВЕТИТЬ НА ЛЮБЫЕ ВАШИ ВОПРОСЫ
