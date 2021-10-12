@@ -10,13 +10,13 @@ import Footer from "../Footer/Footer";
 export default function OfferCredit() {
   return (
     <SafeAreaProvider>
-      <ScrollView style={styles.scroll}>
+      <ScrollView style={styles.scrollFinal}>
         <View style={styles.container}>
           <View style={styles.row}>
             <View style={styles.col1}>
               <Card.Image
                 style={styles.cardImage}
-                source={require("../images/gallery_preview_900x450.jpg")}
+                source={require("../images/photo5310252386469654944-3.jpg")}
               ></Card.Image>
             </View>
             <View style={styles.col2}>

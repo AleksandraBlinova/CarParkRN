@@ -7,44 +7,48 @@ import { Card, ListItem, Icon } from "react-native-elements";
 
 import Footer from "../Footer/Footer";
 
-export default function OfferTradeIN() {
+export default function OfferCredit() {
   return (
     <SafeAreaProvider>
-      <ScrollView style={styles.scroll}>
-        <View style={styles.view}>
-          <>
-            <Card.Image
-              style={styles.cardImage}
-              source={require("../images/offer_m6_1800x900.jpg")}
-            ></Card.Image>
-            <View
-              style={{
-                justifyContent: "flex-end",
-                alignContent: "flex-end",
-                alignItems: "flex-end",
-              }}
-            >
-              <Button
-                title="ПОДРОБНЕЕ"
-                buttonStyle={{
-                  backgroundColor: "black",
-                  height: 28,
-                  width: 106,
-                  alignItems: "center",
-                  borderRadius: 2,
-                  marginRight: "10px",
-                }}
-                titleStyle={{
-                  color: "white",
-                  fontSize: 9,
-                  fontFamily: "Segoe UI",
-                  fontWeight: "bold",
-                }}
-              />
+      <ScrollView style={styles.scrollCenter}>
+        <View style={styles.container}>
+          <View style={styles.row}>
+            <View style={styles.col1}>
+              <Card.Image
+                style={styles.cardImage}
+                source={require("../images/offer_m6_1800x900.jpg")}
+              ></Card.Image>
             </View>
-
-            <Text style={styles.text}>MAZDA ТРЕЙД-ИН</Text>
-          </>
+            <View style={styles.col2}>
+              <Text style={styles.text}>MAZDA ТРЕЙД-ИН</Text>
+              <View
+                style={{
+                  justifyContent: "flex-end",
+                  alignContent: "flex-end",
+                  alignItems: "flex-end",
+                  marginTop: "10px",
+                }}
+              >
+                <Button
+                  title="ПОДРОБНЕЕ"
+                  buttonStyle={{
+                    backgroundColor: "black",
+                    height: 28,
+                    width: 106,
+                    alignItems: "center",
+                    borderRadius: 2,
+                    marginRight: "10px",
+                  }}
+                  titleStyle={{
+                    color: "white",
+                    fontSize: 9,
+                    fontFamily: "Segoe UI",
+                    fontWeight: "bold",
+                  }}
+                />
+              </View>
+            </View>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaProvider>

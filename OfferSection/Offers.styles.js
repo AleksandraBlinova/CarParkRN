@@ -40,4 +40,13 @@ export const styles = StyleSheet.create({
   col2: {
     flex: 0.4,
   },
+  scrollCenter: {
+    backgroundColor: "#fff",
+    marginTop: 10,
+  },
+  scrollFinal: {
+    backgroundColor: "#fff",
+    marginTop: 10,
+    marginBottom: 10,
+  },
 });
