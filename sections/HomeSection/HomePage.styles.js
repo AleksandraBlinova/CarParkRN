@@ -30,6 +30,7 @@ export const styles = StyleSheet.create({
   topimage: {
     width: "100%",
     height: "165px",
+    marginTop: 0,
   },
   header: {
     alignContent: "center",
