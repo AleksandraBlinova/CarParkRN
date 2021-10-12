@@ -3,14 +3,14 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   text: {
     textAlign: "left",
-    fontSize: "14px",
+    fontSize: 14,
     fontFamily: "Segoe UI",
     paddingLeft: "10px",
     paddingBottom: "5px",
   },
   textFinal: {
     textAlign: "left",
-    fontSize: "14px",
+    fontSize: 14,
     fontFamily: "Segoe UI",
     marginBottom: "20px",
     paddingLeft: "10px",
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   header: {
     alignContent: "center",
     justifyContent: "center",
-    fontSize: "20px",
+    fontSize: 20,
     fontFamily: "Segoe UI",
     marginBottom: "20px",
     marginTop: "20px",

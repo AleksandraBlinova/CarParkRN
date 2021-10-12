@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   header: {
-    fontSize: "14px",
+    fontSize: 14,
     fontFamily: "Segoe UI",
     marginBottom: "20px",
     marginTop: "40px",
@@ -11,20 +11,20 @@ export const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: "11px",
+    fontSize: 11,
     fontFamily: "Segoe UI",
     paddingLeft: "10px",
     paddingBottom: "5px",
   },
   adress: {
-    fontSize: "12px",
+    fontSize: 12,
     fontFamily: "Segoe UI",
     margin: "20px",
     textAlign: "center",
     fontWeight: "500",
   },
   info: {
-    fontSize: "12px",
+    fontSize: 12,
     fontFamily: "Segoe UI",
     marginLeft: "20px",
     marginRight: "20px",

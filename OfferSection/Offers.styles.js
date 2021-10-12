@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import React from "react";
 
 export const styles = StyleSheet.create({
   header: {
-    fontSize: "14px",
+    fontSize: 14,
     fontFamily: "Segoe UI",
     marginBottom: "20px",
     marginTop: "20px",
@@ -19,11 +20,24 @@ export const styles = StyleSheet.create({
   text: {
     fontFamily: "Sedoe UI",
     fontSize: 10,
-    fontWeight: "600",
-    textAlign: "left",
-    marginBottom: 20,
+    fontWeight: "550",
+    textAlign: "center",
+    marginLeft: 5,
+    marginTop: 35,
   },
   scroll: {
     backgroundColor: "#fff",
+  },
+  container: {
+    flex: 1,
+  },
+  row: {
+    flexDirection: "row",
+  },
+  col1: {
+    flex: 0.6,
+  },
+  col2: {
+    flex: 0.4,
   },
 });

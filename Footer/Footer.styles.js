@@ -6,6 +6,6 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "black",
     height: 40,
-    fontSize: " 20px",
+    fontSize: 20,
   },
 });
