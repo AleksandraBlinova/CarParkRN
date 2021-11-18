@@ -28,7 +28,7 @@ export default function OfferCredit() {
                   justifyContent: "flex-end",
                   alignContent: "flex-end",
                   alignItems: "flex-end",
-                  marginTop: "10px",
+                  marginTop: 10,
                 }}
               >
                 <Button
@@ -39,13 +39,13 @@ export default function OfferCredit() {
                     width: 106,
                     alignItems: "center",
                     borderRadius: 2,
-                    marginRight: "10px",
+                    marginRight: 10,
                   }}
                   titleStyle={{
                     color: "white",
                     fontSize: 9,
                     fontFamily: "Segoe UI",
-                    fontWeight: "bold",
+                    fontWeight: 600,
                   }}
                 />
               </View>

@@ -24,7 +24,7 @@ const CustomDrawer = (props) => {
           color: "white",
           fontSize: 24,
           fontFamily: "Segoe UI",
-          fontWeight: "bold",
+          fontWeight: "600",
         }}
       />
       <DrawerItemList {...props} />

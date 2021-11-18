@@ -13,13 +13,13 @@ export default function Footer() {
           name="facebook"
           size={24}
           color="#1747A5"
-          style={{ marginRight: "10px", marginLeft: "5px" }}
+          style={{ marginRight: 10, marginLeft: 5 }}
         />
         <MaterialCommunityIcons
           name="instagram"
           size={24}
           color="purple"
-          style={{ marginRight: "12px", marginLeft: "5px" }}
+          style={{ marginRight: 12, marginLeft: 5 }}
         />
         <MaterialCommunityIcons name="youtube" size={24} color="#A81411" />
       </div>

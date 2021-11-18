@@ -5,10 +5,10 @@ export const styles = StyleSheet.create({
   header: {
     fontSize: 14,
     fontFamily: "Segoe UI",
-    marginBottom: "20px",
-    marginTop: "20px",
+    marginBottom: 20,
+    marginTop: 20,
     textAlign: "center",
-    fontWeight: "500",
+    fontWeight: "normal",
   },
   cardImage: {
     borderRadius: 7,
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   text: {
     fontFamily: "Sedoe UI",
     fontSize: 10,
-    fontWeight: "550",
+    fontWeight: "600",
     textAlign: "center",
     marginLeft: 5,
     marginTop: 35,

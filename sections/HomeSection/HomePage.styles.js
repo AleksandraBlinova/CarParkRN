@@ -12,24 +12,24 @@ export const styles = StyleSheet.create({
     textAlign: "left",
     fontSize: 14,
     fontFamily: "Segoe UI",
-    marginBottom: "20px",
-    paddingLeft: "10px",
+    marginBottom: 20,
+    paddingLeft: 10,
   },
   container: {
     flex: 1,
   },
   centerimage: {
     width: "100%",
-    height: "145px",
-    marginBottom: "6px",
+    height: 145,
+    marginBottom: 6,
   },
   finalimage: {
     width: "100%",
-    height: "145px",
+    height: 145,
   },
   topimage: {
     width: "100%",
-    height: "165px",
+    height: 165,
     marginTop: 0,
   },
   header: {
@@ -37,8 +37,8 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     fontSize: 20,
     fontFamily: "Segoe UI",
-    marginBottom: "20px",
-    marginTop: "20px",
+    marginBottom: 20,
+    marginTop: 20,
     fontWeight: "600",
   },
   scroll: {

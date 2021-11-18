@@ -44,7 +44,7 @@ export default function Contacts() {
                 width: 134,
                 alignItems: "center",
                 borderRadius: 2,
-                marginTop: "10px",
+                marginTop: 10,
               }}
               titleStyle={{
                 color: "white",
