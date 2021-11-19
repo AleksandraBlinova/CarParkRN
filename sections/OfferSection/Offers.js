@@ -5,7 +5,7 @@ import { styles } from "./Offers.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Card, ListItem, Icon } from "react-native-elements";
 
-import Footer from "../Footer/Footer";
+import Footer from "../../Footer/Footer";
 import OfferCredit from "./OfferCredit";
 import OfferTradeIN from "./OfferTradeIN";
 import OfferNOIR from "./OfferNOIR";

@@ -11,8 +11,8 @@ import { Button } from "react-native-elements";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import Home from "../sections/HomeSection/HomePage";
-import Offers from "../OfferSection/Offers";
-import Contacts from "../ContactsSection/Contacts";
+import Offers from "../sections/OfferSection/Offers";
+import Contacts from "../sections/ContactsSection/Contacts";
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = (props) => {

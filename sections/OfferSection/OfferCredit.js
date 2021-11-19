@@ -5,7 +5,7 @@ import { styles } from "./Offers.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Card, ListItem, Icon } from "react-native-elements";
 
-import Footer from "../Footer/Footer";
+import Footer from "../../Footer/Footer";
 
 export default function OfferCredit() {
   return (
@@ -16,7 +16,7 @@ export default function OfferCredit() {
             <View style={styles.col1}>
               <Card.Image
                 style={styles.cardImage}
-                source={require("../images/gallery_preview_900x450.jpg")}
+                source={require("../../images/gallery_preview_900x450.jpg")}
               ></Card.Image>
             </View>
             <View style={styles.col2}>

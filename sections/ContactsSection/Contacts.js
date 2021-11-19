@@ -4,7 +4,7 @@ import { Button } from "react-native-elements";
 import { styles } from "./Contacts.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-import Footer from "../Footer/Footer";
+import Footer from "../../Footer/Footer";
 
 export default function Contacts() {
   return (
