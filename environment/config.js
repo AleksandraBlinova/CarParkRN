@@ -9,6 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyBVvAaOQZ0VgOC2Ec65GvcNoAzoED1NfI8",
   authDomain: "carparkrnfb-ccced.firebaseapp.com",
+  databaseURL: "https://carparkrnfb-ccced-default-rtdb.firebaseio.com/",
   projectId: "carparkrnfb-ccced",
   storageBucket: "carparkrnfb-ccced.appspot.com",
   messagingSenderId: "338454894162",
