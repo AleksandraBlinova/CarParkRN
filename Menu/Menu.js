@@ -13,6 +13,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import Home from "../sections/HomeSection/HomePage";
 import Offers from "../sections/OfferSection/Offers";
 import Contacts from "../sections/ContactsSection/Contacts";
+import CarsAvail from "../sections/CarsAvailableSection/CarsAvail";
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = (props) => {
@@ -67,6 +68,12 @@ const DrawerNavigator = () => {
         component={Offers}
         name="Предложения"
         options={{ drawerLabel: "Предложения" }}
+      />
+
+      <Drawer.Screen
+        component={CarsAvail}
+        name="Автомобили в наличии"
+        options={{ drawerLabel: "Автомобили в наличии" }}
       />
       <Drawer.Screen
         component={Contacts}
