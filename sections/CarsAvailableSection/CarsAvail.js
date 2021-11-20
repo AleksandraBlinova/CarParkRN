@@ -5,10 +5,10 @@ import { styles } from "./CarsAvail.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import Footer from "../../Footer/Footer";
-import db from "../../db/firestore";
+import { db } from "../../db/firestore";
 
 const CarsAvail = () => {
-  const [cars, setCars] = useState();
+  const [cars, setCars] = useState([]);
 
   useEffect(() => {
     db.collection("automobile")
@@ -29,7 +29,7 @@ const CarsAvail = () => {
       <ScrollView style={styles.scroll}>
         <View style={styles.view}>
           {cars.map((car) => (
-            <View style={styles.text}>
+            <View key={car.id} style={styles.text}>
               <Text>{car.price}</Text>
               <Text>{car.releaseYear}</Text>
             </View>
