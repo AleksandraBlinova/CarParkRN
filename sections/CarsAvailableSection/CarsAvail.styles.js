@@ -21,4 +21,11 @@ export const styles = StyleSheet.create({
   finishText: {
     marginBottom: 90,
   },
+  cardImage: {
+    borderRadius: 7,
+    width: 176,
+    height: 135,
+    alignItems: "flex-start",
+    marginLeft: 5,
+  },
 });

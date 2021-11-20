@@ -6,6 +6,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Footer from "../../Footer/Footer";
 import { db } from "../../db/firestore";
+import { Card } from "react-native-elements";
 
 const CarsAvail = () => {
   const [cars, setCars] = useState([]);
@@ -21,6 +22,8 @@ const CarsAvail = () => {
           releaseYear: doc.data().releaseYear,
           model: doc.data().model,
           imageURL: doc.data().imageURL,
+          imageURL2: doc.data().imageURL2,
+          imageURL3: doc.data().imageURL3,
           color: doc.data().color,
           color2: doc.data().color2,
           color3: doc.data().color3,
@@ -36,6 +39,10 @@ const CarsAvail = () => {
           {cars.map((car) => (
             <View key={car.id}>
               <Text style={styles.text}>{car.model}</Text>
+              <Card.Image
+                style={styles.cardImage}
+                source={car.imageURL}
+              ></Card.Image>
               <View
                 style={{
                   flexDirection: "row",
@@ -48,6 +55,7 @@ const CarsAvail = () => {
                   size={28}
                   color={car.color}
                   style={{ marginHorizontal: 5 }}
+                  onPress={() => console.log(car.imageURL)}
                 />
                 <IconButton
                   icon="circle"

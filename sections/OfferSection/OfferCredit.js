@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
 import { Button } from "react-native-elements";
 import { styles } from "./Offers.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Card, ListItem, Icon } from "react-native-elements";
+import { Card } from "react-native-elements";
 
 import Footer from "../../Footer/Footer";
 
