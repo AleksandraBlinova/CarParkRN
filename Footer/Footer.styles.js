@@ -8,4 +8,12 @@ export const styles = StyleSheet.create({
     height: 40,
     fontSize: 20,
   },
+  icons: {
+    marginLeft: 8,
+    marginRight: 8,
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    flexWrap: "wrap",
+  },
 });
