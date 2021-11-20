@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
-import { Button } from "react-native-elements";
+import { IconButton } from "react-native-paper";
 import { styles } from "./CarsAvail.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -32,30 +32,31 @@ const CarsAvail = () => {
   return (
     <SafeAreaProvider>
       <ScrollView style={styles.scroll}>
-        <View style={styles.view}>
+        <View>
           {cars.map((car) => (
-            <View key={car.id} style={styles.text}>
+            <View key={car.id}>
               <Text style={styles.text}>{car.model}</Text>
-              <div>
-                <MaterialCommunityIcons
-                  name="circle"
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "flex-end",
+                  marginHorizontal: -5,
+                }}
+              >
+                <IconButton
+                  icon="circle"
                   size={28}
                   color={car.color}
-                  style={styles.colorIcon}
+                  style={{ marginHorizontal: 5 }}
                 />
-                <MaterialCommunityIcons
-                  name="circle"
+                <IconButton
+                  icon="circle"
                   size={28}
                   color={car.color2}
-                  style={styles.colorIcon}
+                  style={{ marginHorizontal: -10 }}
                 />
-                <MaterialCommunityIcons
-                  name="circle"
-                  size={28}
-                  color={car.color3}
-                  style={styles.colorIcon}
-                />
-              </div>
+                <IconButton icon="circle" size={28} color={car.color3} />
+              </View>
               <Text style={styles.finishText}></Text>
             </View>
           ))}

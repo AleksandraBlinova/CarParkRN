@@ -1,10 +1,7 @@
 import React from "react";
-import { View, Text, Image, Button } from "react-native";
-import { IconButton, Colors } from "react-native-paper";
+import { View } from "react-native";
+import { IconButton } from "react-native-paper";
 import { styles } from "./Footer.styles";
-import { Ionicons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Footer() {
   return (

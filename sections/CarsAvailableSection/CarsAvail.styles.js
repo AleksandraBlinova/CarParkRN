@@ -7,14 +7,16 @@ export const styles = StyleSheet.create({
   text: {
     fontSize: 10,
     fontWeight: "bold",
-    marginTop: 20,
+    marginTop: 50,
     textAlign: "right",
-    marginRight: 10,
+    marginRight: 30,
   },
-  colorIcon: {
-    marginTop: 29,
-    textAlign: "right",
-    marginLeft: 4,
+  colorIcons: {
+    flex: 0,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    flexWrap: "wrap",
+    alignItems: "flex-end",
   },
   finishText: {
     marginBottom: 90,
