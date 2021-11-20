@@ -5,9 +5,18 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   text: {
-    fontSize: 12,
-    fontWeight: "500",
-    marginLeft: 236,
-    marginTop: 99,
+    fontSize: 10,
+    fontWeight: "bold",
+    marginTop: 20,
+    textAlign: "right",
+    marginRight: 10,
+  },
+  colorIcon: {
+    marginTop: 29,
+    textAlign: "right",
+    marginLeft: 4,
+  },
+  finishText: {
+    marginBottom: 90,
   },
 });
