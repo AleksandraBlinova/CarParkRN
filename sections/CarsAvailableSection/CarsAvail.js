@@ -3,7 +3,6 @@ import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
 import { IconButton } from "react-native-paper";
 import { styles } from "./CarsAvail.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Footer from "../../Footer/Footer";
 import { db } from "../../db/firestore";
 import { Card } from "react-native-elements";
@@ -38,24 +37,36 @@ const CarsAvail = () => {
         <View>
           {cars.map((car) => (
             <View key={car.id}>
-              <Text style={styles.text}>{car.model}</Text>
-              <Card.Image
-                style={styles.cardImage}
-                source={car.imageURL}
-              ></Card.Image>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: "bold",
+                  marginTop: 30,
+                  marginBottom: 10,
+                  textAlign: "center",
+                }}
+              >
+                {car.model}
+              </Text>
+              <Image
+                id="imgId"
+                style={{ marginLeft: 50, height: 150, width: 250 }}
+                source={require(`../../images/${car.imageURL}.png`)}
+                onPress={() => {
+                  this.source = `../../images/${car.imageURL2}.png`;
+                }}
+              ></Image>
               <View
                 style={{
                   flexDirection: "row",
-                  justifyContent: "flex-end",
-                  marginHorizontal: -5,
+                  justifyContent: "center",
                 }}
               >
                 <IconButton
                   icon="circle"
                   size={28}
                   color={car.color}
-                  style={{ marginHorizontal: 5 }}
-                  onPress={() => console.log(car.imageURL)}
+                  style={{ marginHorizontal: 4 }}
                 />
                 <IconButton
                   icon="circle"

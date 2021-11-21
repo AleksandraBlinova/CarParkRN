@@ -7,9 +7,6 @@ export const styles = StyleSheet.create({
   text: {
     fontSize: 10,
     fontWeight: "bold",
-    marginTop: 50,
-    textAlign: "right",
-    marginRight: 30,
   },
   colorIcons: {
     flex: 0,
@@ -19,13 +16,6 @@ export const styles = StyleSheet.create({
     alignItems: "flex-end",
   },
   finishText: {
-    marginBottom: 90,
-  },
-  cardImage: {
-    borderRadius: 7,
-    width: 176,
-    height: 135,
-    alignItems: "flex-start",
-    marginLeft: 5,
+    marginBottom: 50,
   },
 });
