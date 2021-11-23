@@ -45,6 +45,10 @@ export default function OfferCredit() {
                     fontFamily: "Segoe UI",
                     fontWeight: "600",
                   }}
+                  onPress={() =>
+                    (location.href =
+                      "https://www.mazda.ru/buying/trade-in/?_ga=2.9738301.947919830.1637669333-2090533404.1637321990")
+                  }
                 />
               </View>
             </View>

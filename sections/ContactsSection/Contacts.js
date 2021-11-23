@@ -52,8 +52,10 @@ export default function Contacts() {
                 fontFamily: "Segoe UI",
                 fontWeight: "600",
               }}
-
-              //onPress={() => Alert.alert("Simple Button pressed")}
+              onPress={() =>
+                (location.href =
+                  "https://www.mazda.ru/mazda_world/important-information/?_ga=2.9738301.947919830.1637669333-2090533404.1637321990")
+              }
             />
           </View>
         </View>
