@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
-import { IconButton } from "react-native-paper";
+import { View, Text, ScrollView, Image } from "react-native";
+import { IconButton, Button } from "react-native-paper";
 import { styles } from "./CarsAvail.styles";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Footer from "../../Footer/Footer";
@@ -31,31 +31,43 @@ const CarsAvail = () => {
       .then((cars) => setCars(cars));
   }, []);
 
+  const [flag, setFlag] = useState(0, 1, 2);
+
+  const ChangeFlag = (newValue) => {
+    setFlag(newValue);
+  };
+
   return (
     <SafeAreaProvider>
       <ScrollView style={styles.scroll}>
-        <View>
+        <View style={styles.card}>
           {cars.map((car) => (
-            <View key={car.id}>
+            <Card key={car.id}>
               <Text
                 style={{
                   fontSize: 14,
                   fontWeight: "bold",
                   marginTop: 30,
-                  marginBottom: 10,
+                  marginBottom: 0,
                   textAlign: "center",
                 }}
               >
                 {car.model}
               </Text>
+
               <Image
-                id="imgId"
-                style={{ marginLeft: 50, height: 150, width: 250 }}
-                source={require(`../../images/${car.imageURL}.png`)}
-                onPress={() => {
-                  this.source = `../../images/${car.imageURL2}.png`;
-                }}
+                style={{ marginLeft: 30, height: 150, width: 250 }}
+                source={(() => {
+                  if (flag === 0) {
+                    return require(`../../images/${car.imageURL}.png`);
+                  } else if (flag === 1) {
+                    return require(`../../images/${car.imageURL2}.png`);
+                  } else {
+                    return require(`../../images/${car.imageURL3}.png`);
+                  }
+                })()}
               ></Image>
+
               <View
                 style={{
                   flexDirection: "row",
@@ -67,17 +79,31 @@ const CarsAvail = () => {
                   size={28}
                   color={car.color}
                   style={{ marginHorizontal: 4 }}
+                  onPress={() => {
+                    ChangeFlag(0);
+                  }}
                 />
                 <IconButton
                   icon="circle"
                   size={28}
                   color={car.color2}
                   style={{ marginHorizontal: -10 }}
+                  onPress={() => {
+                    ChangeFlag(1);
+                  }}
                 />
-                <IconButton icon="circle" size={28} color={car.color3} />
+                <IconButton
+                  icon="circle"
+                  size={28}
+                  color={car.color3}
+                  onPress={() => {
+                    ChangeFlag(2);
+                  }}
+                />
               </View>
+
               <Text style={styles.finishText}></Text>
-            </View>
+            </Card>
           ))}
         </View>
       </ScrollView>

@@ -18,4 +18,7 @@ export const styles = StyleSheet.create({
   finishText: {
     marginBottom: 50,
   },
+  card: {
+    marginBottom: 30,
+  },
 });
