@@ -6,4 +6,5 @@ This mobile app was created using React Native and JS
 ![](https://github.com/AleksandraBlinova/CarParkRN/blob/ReactNativeCarPark/menu.PNG)
 ![](https://github.com/AleksandraBlinova/CarParkRN/blob/ReactNativeCarPark/offers.PNG)
 ![](https://github.com/AleksandraBlinova/CarParkRN/blob/ReactNativeCarPark/availcars1.PNG)
+![](https://github.com/AleksandraBlinova/CarParkRN/blob/ReactNativeCarPark/availcars2.PNG)
 
